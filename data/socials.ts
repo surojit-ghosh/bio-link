@@ -21,5 +21,5 @@ export const socials: ISocial[] = [
 
 export const links: Ilink[] = [
     { platform: "Leetcode", url: "https://leetcode.com/u/surojitghosh/", icon: Code },
-    { platform: "Portfolio", url: "https://leetcode.com/u/surojitghosh/", icon: Globe }
+    { platform: "Portfolio", url: "https://surojit.in", icon: Globe }
 ];

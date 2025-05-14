@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { siteConfig } from "@/data/global";
 import { FileText, Mail } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -25,7 +26,8 @@ const Availability = () => {
                             className="h-8 px-2 rounded-lg"
                         >
                             <Link
-                                href="/resume.pdf"
+                                href={siteConfig.resume_url}
+                                rel="noopener noreferrer"
                                 target="_blank"
                                 className="flex items-center gap-1"
                             >
@@ -39,7 +41,7 @@ const Availability = () => {
                             className="h-8 px-2 rounded-lg"
                         >
                             <Link
-                                href="mailto:your.email@example.com"
+                                href={"mailto:" + siteConfig.email}
                                 className="flex items-center gap-1"
                             >
                                 <Mail className="h-3.5 w-3.5" />
@@ -51,9 +53,7 @@ const Availability = () => {
 
                 <div className="border-t pt-3 border-muted-foreground/25">
                     <p className="text-foreground">
-                        Currently seeking full-time opportunities and
-                        internships as a Software Development Engineer (SDE).
-                        Also available for freelance gigs.
+                        {siteConfig.availability_message}
                     </p>
                 </div>
             </CardContent>

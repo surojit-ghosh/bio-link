@@ -1,6 +1,7 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { siteConfig } from "@/data/global";
 import { products, Product } from "@/data/products";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
@@ -57,7 +58,7 @@ const Products = () => {
             <CardFooter>
                 <Button asChild variant="outline" className="w-full">
                     <Link
-                        href="https://yourportfolio.com"
+                        href={siteConfig.portfoilio_url}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
