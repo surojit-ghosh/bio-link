@@ -22,14 +22,14 @@ const Products = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Card className="grid grid-cols-2 gap-4 p-4 ">
-                                <div className="space-y-2">
+                            <Card className="grid grid-cols-2 max-[400px]:grid-cols-1 gap-4 p-4 hover:bg-accent dark:hover:bg-input/50 transition-colors">
+                                <div className="space-y-3 max-[400px]:order-2">
                                     <Image
                                         src={product.iconSrc}
                                         alt={"Icon"}
                                         width={35}
                                         height={35}
-                                        className="rounded-md"
+                                        className="rounded-md max-[400px]:hidden"
                                     />
                                     <h3 className="text-sm text-foreground">
                                         {product.title}
@@ -40,7 +40,7 @@ const Products = () => {
                                 </div>
                                 <AspectRatio
                                     ratio={16 / 9}
-                                    className="bg-muted"
+                                    className="bg-muted max-[400px]:order-1"
                                 >
                                     <Image
                                         src={product.imageSrc}
