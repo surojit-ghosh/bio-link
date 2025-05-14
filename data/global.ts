@@ -3,8 +3,10 @@ export const siteConfig = {
     name: "Surojit Ghosh",
     bio: "CS student passionate about creating intuitive web experiences. Volleyball athlete when away from the keyboard.",
     email: "contact@surojit.in",
-    title: "Surojit Ghosh",
-    description: "Surojit Ghosh - Links",
+    metadata: {
+        title: "Surojit - Links",
+        description: "Surojit's Bio Link Page",
+    },
     github_username: "surojit-ghosh",
     portfoilio_url: "https://surojit.in",
     resume_url: "https://drive.google.com/file/d/1wqwW0DZmjk8krVIOmqOSJ3XtzoLnEDmD/view?usp=sharing",
