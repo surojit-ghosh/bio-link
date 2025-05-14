@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Star, GitFork } from "lucide-react";
 import Link from "next/link";
 
-const GITHUB_REPO = "surojit-ghosh/link-in-bio";
+const GITHUB_REPO = "surojit-ghosh/bio-link";
 
 const Footer: React.FC = () => {
     const [stars, setStars] = useState<number | null>(null);

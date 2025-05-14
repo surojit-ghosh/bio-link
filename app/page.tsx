@@ -1,7 +1,7 @@
 import Availability from "./sections/availability";
 import Footer from "./sections/footer";
 import Header from "./sections/header";
-import Products from "./sections/products";
+// import Products from "./sections/products";
 import SocialsSection from "./sections/socials";
 import Spotify from "./sections/spotify";
 
